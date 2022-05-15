@@ -1,5 +1,7 @@
 .contacts {
+    will-change: scroll-position;
     scroll-snap-type: y mandatory;
+
     scroll-padding: 18px;
     overflow-y: scroll;
     height: 300px;
@@ -7,10 +9,12 @@
 }
 
 .contact {
+    height: 18px;
     scroll-snap-align: start;
 }
 
 .stickyHeader {
+    will-change: contents;
     position: sticky;
     top: 0;
     background-color: #000;
